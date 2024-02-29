@@ -10,4 +10,17 @@ public class Cards {
         cardImage = y;
         backOfCard = new ImageIcon("Images/deckOfCards/backOfCard.png");
     }
+
+    public ImageIcon getFront(){
+        return cardImage;
+    }
+
+    public ImageIcon getBack(){
+        return backOfCard;
+    }
+
+    public int getValue(){
+        return value;
+    }
+
 }

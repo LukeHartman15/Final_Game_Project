@@ -51,19 +51,12 @@ icon.setImage(icon.getImage().getScaledInstance(300, 200, Image.SCALE_DEFAULT));
     panel.add(picLabel2);
     frame.add(hitButton);
     frame.add(standButton);
-
-
-
-
-
-
-
-
-
 frame.add(panel);
+frame.setVisible(true);
 
 
 
-        frame.setVisible(true);
+
+
     }
 }
