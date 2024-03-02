@@ -3,8 +3,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main {
+
+public class Main{
+
     public static void main(String[] args) {
+        DeckOfCards deck = new DeckOfCards();
+        icon3 = deck.drawFromDeck().getFront();
+        icon3.setImage(icon3.getImage().getScaledInstance(200, 400, Image.SCALE_DEFAULT));
+        JLabel picLabel3 = new JLabel(icon3);
 
         JFrame frame = new JFrame();
         frame.setSize(1500, 1000);
@@ -31,6 +37,8 @@ icon.setImage(icon.getImage().getScaledInstance(300, 200, Image.SCALE_DEFAULT));
         hitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                ImageIcon icon3 = deck.drawFromDeck().getFront();
+                icon3.setImage(icon3.getImage().getScaledInstance(200, 400, Image.SCALE_DEFAULT));
 
             }
         });
@@ -46,11 +54,19 @@ icon.setImage(icon.getImage().getScaledInstance(300, 200, Image.SCALE_DEFAULT));
         standButton.setSize(200, 200);
         standButton.setLocation(1000, 600);
 
+
+        picLabel3 = new JLabel(icon3);
+        picLabel3.setSize(200, 400);
+        picLabel3.setLocation(600, 600);
+
+
     panel.add(picLabel);
     panel.add(picLabel1);
     panel.add(picLabel2);
     frame.add(hitButton);
+    frame.add(picLabel3);
     frame.add(standButton);
+
 frame.add(panel);
 frame.setVisible(true);
 
