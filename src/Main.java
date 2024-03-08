@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class Main{
+public class Main extends JPanel{
 
     public static void main(String[] args) {
         boolean play = true;
@@ -31,6 +31,7 @@ public class Main{
             ImageIcon icon6 = deck.drawFromDeck().getFront();
             icon6.setImage(icon6.getImage().getScaledInstance(100, 200, Image.SCALE_DEFAULT));
             JLabel picLabel6 = new JLabel(icon6);
+
             picLabel3.setSize(150, 300);
             picLabel3.setLocation(600, 600);
             picLabel4.setSize(150, 300);
@@ -64,13 +65,21 @@ public class Main{
             hitButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+
+
+
                     ImageIcon hitCardIcon = deck.drawFromDeck().getFront();
                     hitCardIcon.setImage(hitCardIcon.getImage().getScaledInstance(100, 200, Image.SCALE_DEFAULT));
-                    JLabel hitLabel = new JLabel(hitCardIcon);
-                    hitLabel.setLocation((650 + (50 * extra[0])), (550 + (50 * extra[0])));
-                    hitLabel.setSize(150, 300);
-                    frame.add(hitLabel);
+                    JLabel stuffLabel = new JLabel(hitCardIcon);
+
+                    stuffLabel.setLocation((650 + (50 * extra[0])), (550 - (50 * extra[0])));
+                    stuffLabel.setSize(150, 300);
+
                     extra[0] = extra[0] + 1;
+                    frame.add(stuffLabel);
+
+                    frame.paintComponents(frame.getGraphics());
+                    stuffLabel.setVisible(true);
                 }
             });
             ImageIcon standIcon = new ImageIcon("Images/stand.png");
