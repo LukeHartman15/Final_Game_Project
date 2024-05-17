@@ -7,7 +7,7 @@ public class DeckOfCards {
     public DeckOfCards(){
 
 
-        deck[0] = new Cards(1, (new ImageIcon("Images/deckOfCards/AC.png")));
+        deck[0] = new Cards(11, (new ImageIcon("Images/deckOfCards/AC.png")));
         deck[1] = new Cards(2, (new ImageIcon("Images/deckOfCards/2C.png")));
         deck[2] = new Cards(3, (new ImageIcon("Images/deckOfCards/3C.png")));
         deck[3] = new Cards(4, (new ImageIcon("Images/deckOfCards/4C.png")));
@@ -21,7 +21,7 @@ public class DeckOfCards {
         deck[11] = new Cards(10, (new ImageIcon("Images/deckOfCards/QC.png")));
         deck[12] = new Cards(10, (new ImageIcon("Images/deckOfCards/KC.png")));
 
-        deck[13] = new Cards(1, (new ImageIcon("Images/deckOfCards/AD.png")));
+        deck[13] = new Cards(11, (new ImageIcon("Images/deckOfCards/AD.png")));
         deck[14] = new Cards(2, (new ImageIcon("Images/deckOfCards/2D.png")));
         deck[15] = new Cards(3, (new ImageIcon("Images/deckOfCards/3D.png")));
         deck[16] = new Cards(4, (new ImageIcon("Images/deckOfCards/4D.png")));
@@ -35,7 +35,7 @@ public class DeckOfCards {
         deck[24] = new Cards(10, (new ImageIcon("Images/deckOfCards/QD.png")));
         deck[25] = new Cards(10, (new ImageIcon("Images/deckOfCards/KD.png")));
 
-        deck[26] = new Cards(1, (new ImageIcon("Images/deckOfCards/AH.png")));
+        deck[26] = new Cards(11, (new ImageIcon("Images/deckOfCards/AH.png")));
         deck[27] = new Cards(2, (new ImageIcon("Images/deckOfCards/2H.png")));
         deck[28] = new Cards(3, (new ImageIcon("Images/deckOfCards/3H.png")));
         deck[29] = new Cards(4, (new ImageIcon("Images/deckOfCards/4H.png")));
@@ -49,7 +49,7 @@ public class DeckOfCards {
         deck[37] = new Cards(10, (new ImageIcon("Images/deckOfCards/QH.png")));
         deck[38] = new Cards(10, (new ImageIcon("Images/deckOfCards/KH.png")));
 
-        deck[39] = new Cards(1, (new ImageIcon("Images/deckOfCards/AS.png")));
+        deck[39] = new Cards(11, (new ImageIcon("Images/deckOfCards/AS.png")));
         deck[40] = new Cards(2, (new ImageIcon("Images/deckOfCards/2S.png")));
         deck[41] = new Cards(3, (new ImageIcon("Images/deckOfCards/3S.png")));
         deck[42] = new Cards(4, (new ImageIcon("Images/deckOfCards/4S.png")));
@@ -103,5 +103,6 @@ public class DeckOfCards {
 
         return temp;
     }
+
 
 }
